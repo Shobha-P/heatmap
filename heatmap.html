@@ -1,0 +1,54 @@
+<html>
+<title> HeatMap </title>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/WebsiteData/CSS/allCss.css">
+    <link rel="stylesheet" href="/WebsiteData/CSS/allCss2.css">
+    <link href='heatmap.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!--        <div id="nav"> </div>-->
+        <span>
+            <label>City: </label>
+            <select id="city">
+                <option selected=true value="san jose">San Jose</option>
+                <option value="palo alto">Palo Alto</option>
+                <option value="mountain view">Mountain View</option>
+                <option value="redwood city">Redwood City</option>
+                <option value="san francisco">San Francisco</option>
+            </select>
+        </span>
+        <span>
+            <label>User Type: </label>
+            <select id="userType">
+                <option selected=true value="all">All</option>
+                <option value="subscriber">Subscriber</option>
+                <option value="customer">Customer</option>
+            </select>
+        </span>
+        <span>
+            <label>Days: </label>
+            <select id="day">
+                <option selected=true value="all">All days</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+        </span>
+<div id="container"></div>
+<div id="HeatShowOtherGraphs" class="popup hideMe"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/heatmap.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="/WebsiteData/JS/highchartsTheme.js"></script>
+<script src="heatmap.js"></script>
+</body>
+</html>
